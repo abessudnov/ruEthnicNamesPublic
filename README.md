@@ -12,4 +12,4 @@ It provides a Python code for a classifier to code ethnicity with data on first 
 
 - `paper`: a pdf of the paper. 
 
-For an example of the usage of the classifier please see [here](https://github.com/abessudnov/ruEthnicNamesPublic/mlPipeline).
+For an example of the usage of the classifier please see [here](https://github.com/abessudnov/ruEthnicNamesPublic/tree/main/mlPipeline).
