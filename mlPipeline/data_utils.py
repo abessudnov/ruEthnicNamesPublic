@@ -26,12 +26,14 @@ Filter given data frame with some properties
     use_regex -- whether to filter data with given regular expression or not
     regex -- regular expression to filter, data which does not math it is droped
     confidence_threshold -- lower bound for allowed confidence coefficient
+    lowercase -- whether to lowercase names or not
 Returns filtered data
 '''
 def filter_data(data,
                 use_translit=True, transliteration_to='ru',
                 use_regex=True, regex=r'[а-я\-\ ]*',
-                confidence_threshold=0):
+                confidence_threshold=0,
+                lowercase=True):
     data_filtered = data.copy()
 
     # Transliterate if needed
@@ -80,7 +82,10 @@ def filter_data(data,
 
     # Leave data with big enough confidence
     data_filtered = data_filtered[data_filtered['confidence'] >= confidence_threshold]
-
+    # Lowercase if needed
+    if lowercase:
+        data_filtered['first_name'] = data_filtered['first_name'].str.lower()
+        data_filtered['last_name'] = data_filtered['last_name'].str.lower()
     return data_filtered
 
 

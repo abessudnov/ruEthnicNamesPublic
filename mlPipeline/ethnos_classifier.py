@@ -36,6 +36,10 @@ def filter_data(data):
     data_filtered['first_name'] = data_filtered['first_name'].apply(regex_filter)
     data_filtered['last_name'] = data_filtered['last_name'].apply(regex_filter)
 
+    # Lowercase if needed
+    data_filtered['first_name'] = data_filtered['first_name'].str.lower()
+    data_filtered['last_name'] = data_filtered['last_name'].str.lower()
+
     return data_filtered
 
 
