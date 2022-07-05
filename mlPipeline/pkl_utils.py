@@ -10,4 +10,4 @@ def load_pkl(target_path):
 # Dump data to pickle file
 def save_pkl(target_path, data):
     with open(target_path, 'wb') as handle:
-        pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(data, handle, protocol=4)
