@@ -1,6 +1,6 @@
 This is a public repository to accompany:
 
-A.Bessudnov, D.Tarasov, V.Panasovets, V.Kostenko, I.Smirnov and V.Uspenskiy. (2021). "Predicting ethnicity with data on personal names in Russia". SocArXiv, 19 October 2021. [DOI 10.31235/osf.io/wf6p4](https://osf.io/preprints/socarxiv/wf6p4/)
+A.Bessudnov, D.Tarasov, V.Panasovets, V.Kostenko, I.Smirnov and V.Uspenskiy. (2023). "Predicting perceived ethnicity with data on personal names in Russia". Journal of Computational Social Science. [DOI 10.1007/s42001-023-00205-y](https://doi.org/10.1007/s42001-023-00205-y)
 
 It provides a Python code for a classifier to code ethnicity with data on first names and surnames for major ethnic groups populating Russia.
 
